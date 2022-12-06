@@ -1,0 +1,88 @@
+/* WEBPAGE VIEW */
+@media screen and (max-width: 1920px){
+/* navigation stuff */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 45px 0px 0px 25px;
+  overflow: hidden;
+  background-color: #284C81;
+  font-size: 25px;
+}
+
+li {
+  float: right;
+}
+
+li img{
+  width: 30%;
+}
+
+li a {
+  font-family: Poppins-bold, sans-serif;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+body{
+  background-color: #F5E7A6;
+  /* background-image: url("vt2.JPG"), url("VT.JPG"); */
+}
+
+h1{
+  font-family: Poppins-bolditalic, sans-serif;
+  font-size: 40px;
+}
+
+/* flex text */
+;.container{
+  display: flex;
+  font-family: Poppins, sans-serif;
+  flex-direction: column;
+}
+
+.grid-item1{
+  background-color: #284C81;
+  border-radius: 25px;
+  color: white;
+  padding: 30px 40px 55px 40px;
+  font-size: 23px;
+  margin: 30px 200px 15px 200px;
+}
+
+.grid-item2{
+  background-color: #284C81;
+  border-radius: 25px;
+  color: white;
+  padding: 30px 40px 55px 40px;
+  font-size: 23px;
+  margin: 30px 200px 15px 200px;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  background-color:#3a87b7;
+  padding: 40px;
+}
+
+/* TABLET VIEW */
+@media screen and (max-width: 1320px){
+
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 896px){
+
+}}
