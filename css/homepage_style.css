@@ -14,8 +14,8 @@ li {
   float: right;
 }
 
-li img{
-  width: 30%;
+ul img{
+  padding-bottom: 10px;
 }
 
 li a {
@@ -37,6 +37,7 @@ li a:hover {
 
 body{
   background-color: #F5E7A6;
+  font-family: Poppins, sans-serif;
 }
 
 /* description & redbull image*/
@@ -267,6 +268,41 @@ h1{
   color: #284C81;
   padding-left: 25px;
   overflow: scroll;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #284C81;
+  font-size: 15px;
+}
+
+li {
+  float: right;
+}
+
+ul img{
+  padding-bottom: 30px;
+}
+
+li a {
+  display: flex;
+  font-family: Poppins-bold, sans-serif;
+  display: inline;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  text-decoration: underline;
 }
 
 }}}

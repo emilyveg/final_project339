@@ -1,43 +1,44 @@
 /* WEBPAGE VIEW */
 @media screen and (max-width: 1920px){
   /* navigation stuff */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 45px 0px 0px 25px;
-  overflow: hidden;
-  background-color: #284C81;
-  font-size: 25px;
-}
-
-li {
-  float: right;
-}
-
-li img{
-  width: 30%;
-}
-
-li a {
-  font-family: Poppins-bold, sans-serif;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  text-decoration: underline;
-}
-
-.active {
-  text-decoration: underline;
-}
-
-body{
-  background-color: #F5E7A6;
-}
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 45px 0px 0px 25px;
+    overflow: hidden;
+    background-color: #284C81;
+    font-size: 25px;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  ul img{
+    padding-bottom: 10px;
+  }
+  
+  li a {
+    font-family: Poppins-bold, sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    text-decoration: underline;
+  }
+  
+  .active {
+    text-decoration: underline;
+  }
+  
+  body{
+    background-color: #F5E7A6;
+    font-family: Poppins, sans-serif;
+  }
 
 /* form & tinkered toy box photo */
 .grid-container {
