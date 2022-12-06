@@ -1,6 +1,11 @@
 /* WEBPAGE VIEW */
 @media screen and (max-width: 1920px){
   /* navigation stuff */
+  /* .skip a{
+    position: absolute;
+    top: -40px;
+  } */
+
     ul {
     list-style-type: none;
     margin: 0;
