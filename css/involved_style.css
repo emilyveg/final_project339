@@ -1,170 +1,372 @@
-/* WEBPAGE VIEW */
-@media screen and (max-width: 1920px){
-  /* navigation stuff */
-  .skip a{
-    position: absolute;
-    top: -40px;
-  }
-  
-  .skip a:focus{
-    top: 20px;
-  }
-
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 45px 0px 0px 25px;
-    overflow: hidden;
-    background-color: #284C81;
-    font-size: 25px;
-  }
-  
-  li {
-    float: right;
-  }
-  
-  ul img{
-    padding-bottom: 10px;
-  }
-  
-  li a {
-    font-family: Poppins-bold, sans-serif;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    text-decoration: underline;
-  }
-  
-  .active {
-    text-decoration: underline;
-  }
-  
-  body{
-    background-color: #F5E7A6;
-    font-family: Poppins, sans-serif;
-  }
-
-/* form & tinkered toy box photo */
-.grid-container {
-  display: grid;
-  grid-template-columns: 10% 30% 10% 40% 10%;
-  grid-template-rows: 10% 80% 10%;
+/* MOBILE VIEW */
+/* navigation */
+.skip a{
+  font-family: Poppins-bolditalic, sans-serif;
+  background-color: white;  
+  position: absolute;
+  top: -40px;
+}
+ 
+.skip a:focus{
+  top: 20px;
 }
 
-.grid-item1{
-  grid-area: 2/4/5/5;
+body {
+  background-color: #F5E7A6;
+  margin: 0px;
+  color: white;
+ }
+
+ul {
+  font-family: Poppins-bold, sans-serif;
+  font-size: 100%;
+  background-color: #284C81;
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li a {
+  display: inline-block;
+  width: 100px;
+  color: white;
+  text-align: center;
+  /* padding: 10px; */
+  text-decoration: none;
+  /* border: solid 1px white; */
+}
+
+li img{
+  margin: 0px;
+  padding: 10px;
+  width: 95%;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  text-decoration: underline;
+  font-family: Poppins-bolditalic, sans-serif;
+}
+
+/* countdown */
+main p{
+  font-family: Poppins-bold, sans-serif;
+  font-size: 230%;
+  color: #284C81;
+  text-align: center;
+}
+
+ /* form & tinkered toy box photo */
+ .form-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+
+.form{
+  grid-area: 2/2/3/3;
   font-family: Poppins-bold, sans-serif;
   color: white;
-  font-size: 25px;
-  text-align: center;
-  align-items: center;
+  text-align: center; 
   border-radius: 25px;
   background-color:#284C81;
   padding: 30px;
+  margin: 20px;
 }
 
 .grid-item2{
-  border-radius: 25px;
-  grid-area: 2/2/4/3;
+  display: none;
 }
 
 h1{
-  padding-top: 50px;
-  padding-bottom: 50px;
   font-family: Poppins-bolditalic, sans-serif;
-  font-size: 50px;
+  font-size: 200%;
   color: #284C81;
-  margin-left: 10%;
+  margin: 0px 20px 20px 20px;
+  text-align: center;
 }
 
-/* therapy photos */
-.flex-container{
+.FRONT-flex-container{
   display: flex;
-  height: 200px;
-  align-items: flex-end;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10%;
 }
 
-/* social media photos */
-.grid-container3{
-  display: grid;
-  grid-template-columns: 10% 20% 10% 20% 10% 20% 10%;
-  grid-template-rows: auto auto;
-  padding-bottom: 20px;
+.FRONT-flex-container p{
+  font-size: 90%;
+  margin: 5px 40px 30px 40px;
 }
 
-.grid3-item1{
-  grid-area: 2/2/3/3;
+.BACK-flex-container{
+  display: none;
 }
 
-.grid3-item2{
-  grid-area: 2/4/2/5;
-}
-
-.grid3-item3{
-  grid-area: 2/6/2/7;
+h2{
+  font-family: Poppins-bolditalic, sans-serif;
+  color: #284C81;
+  text-align: center;
+  font-size: 100%;
+  margin: 0%;
 }
 
 footer{
   display: flex;
+  align-items: center;
+  background-color: #284C81;
+}
+
+footer a{
+  display: flex;
   justify-content: center;
-  background-color:#3a87b7;
-  padding: 40px;
 }
 
 
 /* TABLET VIEW */
-@media screen and (max-width: 1320px){
-  /* form & tinkered toy box photo */
-.grid-container {
+@media screen and (min-width: 820px){
+  ul {
+    font-size: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  li img{
+    width: 60%;
+    padding: 20px 0px 0px 20px;
+  }
+
+.form-container {
   display: grid;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-columns: 10% 35% 10% 35% 10%;
   grid-template-rows: 10% 80% 10%;
 }
 
-.grid-item1{
-  grid-area: 2/2/3/3;
-  font-family: Poppins-bold, sans-serif;
-  color: white;
-  font-size: 25px;
-  text-align: center;
-  align-items: center;
-  border-radius: 25px;
-  background-color:#284C81;
-  padding: 30px;
+.form{
+  margin: 0px;
+  padding: 10px;
+  grid-area: 1/2/4/3;
 }
 
 .grid-item2{
- opacity: 0;
+  display: grid;
+  width: 100%;
+  grid-area: 1/4/3/5;
 }
 
 h1{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  font-family: Poppins-bolditalic, sans-serif;
-  font-size: 50px;
-  color: #284C81;
-  margin-left: 10%;
+  margin: 0px;
+  padding: 50px 0px 0px 0px ;
 }
 
-/* therapy photos */
-.flex-container{
+.FRONT-flex-container{
+  margin: 2% 10%;
   display: flex;
-  height: 200px;
-  align-items: flex-end;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
   overflow: scroll;
 }
 
+.flex-item1{
+  width: 300px;
 }
 
-/* MOBILE VIEW */
-@media screen and (max-width: 896px){
+.flex-item2{
+  width: 300px;
+}
+
+.flex-item3{
+  width: 300px;
+}
+
+.flex-item4{
+  width: 300px;
+}
+
+.flex-item5{
+  width: 300px;
+}
+
+.flex-item6{
+  width: 300px;
+}
+
+.FRONT-flex-container p{
+  display: flex;
 }}
 
+.BACK-flex-container{
+  display: none;
+}
 
+h2{
+  font-family: Poppins-bolditalic, sans-serif;
+  color: #284C81;
+  text-align: center;
+  font-size: 200%;
+  margin: 0%;
+}
+
+footer{
+  justify-content: center;
+}
+
+
+/* WEBPAGE VIEW */
+@media screen and (min-width: 1024px){
+  ul {
+    font-size: 25px;
+    align-content: center;
+  }
+
+  li{
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+
+  li a{
+    width: 150px
+  }
+
+  .countdown-container{
+    font-size: 150%;
+  }
+
+  .countdown-container h2{
+    margin: 2% 0% 0% 0%;
+  }
+
+  .countdown-container p{
+    margin:0% 0% 2% 0%;
+  }
+
+ 
+  .form-container {
+    display: grid;
+    grid-template-columns: 10% 35% 10% 35% 10%;
+    grid-template-rows: 10% 80% 10%;
+  }
+
+  .form{
+    margin: 0px;
+    padding: 30px 10px 10px 10px ;
+    grid-area: 1/2/4/3;
+    font-size: 200%;
+  }
+
+  .grid-item1{
+    justify-content: center;
+    grid-area: 2/4/5/5;
+    font-size: larger;
+  }
+  
+  .FRONT-flex-container{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+  }
+
+  .flex-item1{
+    width: 400px;
+  }
+  .flex-item1:hover{
+    opacity: 0;
+  }
+  
+  .flex-item2{
+    width: 400px;
+  }
+  .flex-item2:hover{
+    opacity: 0;
+  }
+  
+  .flex-item3{
+    width: 400px;
+  }
+  .flex-item3:hover{
+    opacity: 0;
+  }
+  
+  .flex-item4{
+    width: 400px;
+  }
+  .flex-item4:hover{
+    opacity: 0;
+  }
+  
+  .flex-item5{
+    width: 400px;
+  }
+  .flex-item5:hover{
+    opacity: 0;
+  }
+  
+  .flex-item6{
+    width: 400px;
+  }
+  .flex-item6:hover{
+    opacity: 0;
+  }
+  
+  .FRONT-flex-container p{
+    display: none;
+  }
+
+  .BACK-flex-container{
+    opacity: 100;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: scroll;
+    margin: 1% 10% ;
+  }
+
+  .flex2-item1{
+    width: 400px;
+  }
+  
+  .flex2-item2{
+    width: 400px;
+  }
+  
+  .flex2-item3{
+    width: 400px;
+  }
+  
+  .flex2-item4{
+    width: 400px;
+  }
+  
+  .flex2-item5{
+    width: 400px;
+  }
+  
+  .flex2-item6{
+    width: 400px;
+  }
+
+  h1{
+    margin: 70px 40px 0px 40px;
+    font-size: 65px;
+  }
+
+  h2{
+    font-family: Poppins-bolditalic, sans-serif;
+    color: #284C81;
+    text-align: center;
+    font-size: 300%;
+    margin: 0%;
+  }
+}
